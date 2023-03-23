@@ -1,0 +1,67 @@
+<div class="admin-panel">
+    <div>
+        <h1>Add Details</h1>
+    </div>
+    <form [formGroup]="registrationForm">
+        <div class="row">
+            <div id="divName" class="col-4">
+                <div class="col-3">
+                    <strong><span>Name:</span></strong>
+                </div>
+                <div class="col-9">
+                    <mat-form-field class="example-form-field" appearance="fill">
+                        <input matInput type="text" formControlName="name" >
+                        <input type="hidden" formControlName="id">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div id="divEmail" class="col-4">
+                <div class="col-3">
+                    <strong><span>Email:</span></strong>
+                </div>
+                <div class="col-9">
+                    <mat-form-field class="example-form-field" appearance="fill">
+                        <input matInput type="text" formControlName="email" >
+                    </mat-form-field>
+                </div>
+            </div>
+            <div id="divPhone" class="col-4">
+                <div class="col-3">
+                    <strong><span>Phone No.:</span></strong>
+                </div>
+                <div class="col-9">
+                    <mat-form-field class="example-form-field" appearance="fill">
+                        <input matInput type="text" formControlName="phoneNumber" maxlength="10">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="divCity" class="col-4">
+                <div class="col-3">
+                    <strong><span>City:</span></strong>
+                </div>
+                <div class="col-9">
+                    <mat-form-field class="example-form-field">
+                        <input matInput type="text" formControlName="city">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div id="divpinCode     " class="col-4">
+                <div class="col-3">     
+                    <strong><span>Pin Code:</span></strong>
+                </div>
+                <div class="col-9">
+                    <mat-form-field class="example-form-field">
+                        <input matInput type="text" formControlName="pincode" maxlength="6">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="save-btn">
+            <input  type="submit" class="btn btn-primary" value="Save" [disabled]="!registrationForm.valid" (click)="saveRegistration()">
+            &nbsp;&nbsp;&nbsp;
+            <input  type="button" class="btn btn-primary" value="Cancel" (click)="close()">
+        </div>
+    </form>
+</div>
