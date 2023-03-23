@@ -9,7 +9,6 @@ describe('HttpInterceptorService', () => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(HttpInterceptorService);
   });
-
   it('should be created', () => {
     expect(service).toBeTruthy();
   });

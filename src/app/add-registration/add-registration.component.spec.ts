@@ -20,3 +20,4 @@ describe('AddRegistrationComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

@@ -9,7 +9,6 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './add-registration.component.html',
   styleUrls: ['./add-registration.component.scss']
 })
-
 export class AddRegistrationComponent implements OnInit{
   registrationForm!: UntypedFormGroup;
   constructor(

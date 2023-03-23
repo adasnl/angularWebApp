@@ -20,7 +20,6 @@ export class RegistrationListComponent {
   editRegistration!: TemplateRef<any>;
 
   displayedColumns: string[] = ['name', 'email', 'phone', 'city', "pincode", "position"];
-  
   constructor(
     private router: Router,
     private registrationActionService: RegistrationActionService,
