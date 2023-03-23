@@ -25,9 +25,6 @@ export class EditRegistrationComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    // var registration = this.registrationActionService.getRegistrationsState().subscribe({
-
-    // })
     this.buildForm();
 
     this.registrationActionService.getEditedRegistrationState().subscribe((result: any)=>{

@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 })
 export class HttpInterceptorService implements HttpInterceptor {
   request: any;
-
   constructor(
   ) {}
 

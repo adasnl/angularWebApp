@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AddRegistrationComponent } from './add-registration.component';
 
 describe('AddRegistrationComponent', () => {

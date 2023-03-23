@@ -12,7 +12,6 @@ import { MatDialog } from '@angular/material/dialog';
   templateUrl: './registration-list.component.html',
   styleUrls: ['./registration-list.component.scss']
 })
-
 export class RegistrationListComponent {
   readonly dataSource: Observable<any> = this.registrationActionService.getRegistrationsState();
   dataSourceWithPageSize: any = [];

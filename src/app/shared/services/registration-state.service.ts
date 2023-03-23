@@ -4,6 +4,7 @@ import { BehaviorSubject, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class RegistrationStateService {
   private registrations = new BehaviorSubject<any>(null);
   private deleteRegistration = new Subject();

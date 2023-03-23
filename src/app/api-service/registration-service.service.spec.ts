@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { RegistrationServiceService } from './registration-service.service';
 
 describe('RegistrationServiceService', () => {

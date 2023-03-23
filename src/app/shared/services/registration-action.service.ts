@@ -7,6 +7,7 @@ import { RegistrationStateService } from './registration-state.service';
 @Injectable({
   providedIn: 'root'
 })
+
 export class RegistrationActionService extends RegistrationStateService {
 
   constructor(public registrationApi: RegistrationServiceService, private toastr: ToastrService) { 
